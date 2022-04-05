@@ -1,11 +1,15 @@
-import {WrapperAbout} from './about.styles';
+import { WrapperAbout } from "./about.styles";
+import { Aside } from "../../sections";
 
 const About = () => {
-    return (
-        <WrapperAbout>
-            <p>About</p>
-        </WrapperAbout>
-    )
-}
+  return (
+    <WrapperAbout>
+      <Aside />
+      <div>
+        <p>About</p>
+      </div>
+    </WrapperAbout>
+  );
+};
 
 export default About;

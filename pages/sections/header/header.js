@@ -1,16 +1,34 @@
-import { WrapperHeader } from "./header.styles";
+import { useState, useEffect } from "react";
+import {
+  WrapperHeader,
+  Navbar,
+  NavbarHeader,
+  NavbarCollapse,
+} from "./header.styles";
 
 const Header = () => {
+  const [offset, setOffset] = useState(0);
+  const [classScroll, setClassScroll] = useState("");
+
+  useEffect(() => {
+    const onScroll = () => setOffset(window.pageYOffset);
+
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    setClassScroll(offset > 0 ? "scroll-active" : "");
+  }, [offset]);
+
   return (
-    <WrapperHeader>
-      <nav>
-        <div className="navbar-header">
-          <button type="button">menu</button>
-          <a href="#TOP" className="navbar-brand">
-            FULLSTACK DEVELOPER
-          </a>
-        </div>
-        <div className="navbar-collapse">
+    <WrapperHeader className={classScroll}>
+      <Navbar>
+        <NavbarHeader className={classScroll}>
+          <a href="#TOP">FULLSTACK DEVELOPER</a>
+        </NavbarHeader>
+        <NavbarCollapse className={classScroll}>
           <ul>
             <li>
               <a href="#intro">SOBRE</a>
@@ -31,8 +49,8 @@ const Header = () => {
               <a href="#contacts">CONTATOS</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </NavbarCollapse>
+      </Navbar>
     </WrapperHeader>
   );
 };

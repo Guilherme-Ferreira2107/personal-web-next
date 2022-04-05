@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { About, Aside, Footer, Header, Presentation } from "./sections";
+import { About, Footer, Header, Presentation } from "./sections";
 import { Wrapper, WrapperContent } from "./_app.styles";
 
 export default function Home() {
@@ -12,13 +12,10 @@ export default function Home() {
       </Head>
 
       <WrapperContent>
-        <Aside />
-        <div>
-          <Header />
-          <About />
-          <Presentation />
-          <Footer />
-        </div>
+        <Header />
+        <About />
+        <Presentation />
+        <Footer />
       </WrapperContent>
     </Wrapper>
   );

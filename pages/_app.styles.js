@@ -6,7 +6,6 @@ export const Wrapper = styled.section`
 
 export const WrapperContent = styled.section`
   width: 100%;
-  display: flex;
 
   & div {
     width: 100%;

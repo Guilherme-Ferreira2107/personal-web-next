@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const WrapperFooter = styled.footer`
+  width: 100%;
   padding: 20px;
   text-align: center;
 

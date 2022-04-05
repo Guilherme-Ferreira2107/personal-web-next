@@ -59,6 +59,7 @@ export const VerticalDivisor = styled.div`
 
 export const SocialList = styled.ul`
   width: 100%;
+  list-style: none;
 
   li {
     margin: 10px 0;

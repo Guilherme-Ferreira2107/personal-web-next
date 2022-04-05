@@ -12,48 +12,9 @@ export default function Footer() {
 
   return (
     <WrapperFooter>
-      <a
-        href="https://www.linkedin.com/in/guifsantos/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          className="icon-social-media"
-          src={iconLinkedin}
-          alt="Linkedin"
-          width="40"
-          height="40"
-        />
-      </a>
-      <a
-        href="https://api.whatsapp.com/send?phone=5511986701058"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          className="icon-social-media"
-          src={iconWhatsapp}
-          alt="Whatsapp"
-          width="40"
-          height="40"
-        />
-      </a>
-      <a
-        href="https://github.com/Guilherme-Ferreira2107"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          className="icon-social-media"
-          src={iconGithub}
-          alt="Github"
-          width="40"
-          height="40"
-        />
-      </a>
       <p>
         Copyright ©{currentYear} Todos os direitos reservados | Desenvolvedor
-        Fullstack Javascript{" "}
+        Fullstack Javascript
         <a
           href="https://www.linkedin.com/in/guifsantos/"
           target="_blank"
@@ -62,7 +23,6 @@ export default function Footer() {
           GUILHERME SANTOS
         </a>
       </p>
-      <small>V.{Package.version}</small>
     </WrapperFooter>
   );
 }

@@ -26,7 +26,7 @@ export default function Header() {
         <NavbarCollapse className={classScroll}>
           <ul>
             <li>
-              <a href="#intro">SOBRE</a>
+              <a href="#about">SOBRE</a>
             </li>
             <li>
               <a href="#education">EDUCAÇÃO</a>

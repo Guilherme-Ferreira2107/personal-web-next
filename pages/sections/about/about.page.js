@@ -5,7 +5,7 @@ import { WrapperAbout, ContentAbout, ContentImage } from "./styles";
 
 export default function About() {
   return (
-    <WrapperAbout>
+    <WrapperAbout id="about">
       <h1>
         SOBRE <span>MIM</span>
       </h1>
@@ -34,12 +34,7 @@ export default function About() {
           </p>
         </div>
         <ContentImage>
-          <Image
-            className="perfil"
-            src={perfil}
-            alt="Guilherme Santos"
-            unsized={true}
-          />
+          <Image className="perfil" src={perfil} alt="Guilherme Santos" />
         </ContentImage>
       </ContentAbout>
     </WrapperAbout>

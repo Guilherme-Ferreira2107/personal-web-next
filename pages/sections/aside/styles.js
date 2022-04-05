@@ -13,23 +13,23 @@ export const WrapperAside = styled.aside`
 
 export const ContentNamePanel = styled.div`
   & div {
-    margin-top: 100px !important;
-    margin-left: -80px !important;
+    margin-top: 120px;
+    margin-left: -80px;
     width: 250px;
     transform: rotate(-90deg);
 
     p {
       color: rgba(255, 255, 255, 0.5);
-      font-size: 1rem;
+      font-size: 1.4rem;
       letter-spacing: 0.15rem;
     }
 
     strong {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     span {
-      font-size: 0.5rem;
+      font-size: 0.8rem;
     }
   }
 `;

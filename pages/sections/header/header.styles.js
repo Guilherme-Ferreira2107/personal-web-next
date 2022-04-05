@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const WrapperHeader = styled.section`
   width: 100%;
   height: 80px;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background-color: transparent;
   position: fixed;
 
@@ -13,7 +13,7 @@ export const WrapperHeader = styled.section`
     box-shadow: 0 0 35px rgb(0 0 0 / 10%);
 
     animation-name: showHeader;
-    animation-duration: 1s;
+    animation-duration: 0.25s;
 
     @keyframes showHeader {
       from {
@@ -48,7 +48,7 @@ export const NavbarCollapse = styled.div`
   justify-content: flex-end;
 
   &.scroll-active {
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     a {
       color: rgba(255, 255, 255, 0.5);
     }

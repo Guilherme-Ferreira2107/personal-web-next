@@ -13,8 +13,8 @@ export default function Home() {
 
       <WrapperContent>
         <Header />
-        <About />
         <Presentation />
+        <About />
         <Footer />
       </WrapperContent>
     </Wrapper>

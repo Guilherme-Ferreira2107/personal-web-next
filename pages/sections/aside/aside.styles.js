@@ -12,13 +12,9 @@ export const WrapperAside = styled.aside`
 `;
 
 export const ContentNamePanel = styled.div`
-  position: relative;
-  width: 100%;
-
   & div {
-    position: relative;
-    margin-top: 100px;
-    margin-left: -80px;
+    margin-top: 100px !important;
+    margin-left: -80px !important;
     width: 250px;
     transform: rotate(-90deg);
 

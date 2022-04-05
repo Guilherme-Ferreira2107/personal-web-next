@@ -8,6 +8,7 @@ export const WrapperPresentation = styled.section`
 `;
 
 export const ContentPresentation = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,10 +33,16 @@ export const ContentPresentation = styled.div`
     z-index: 1;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
-    font-size: 10rem;
+    font-size: 3rem;
     color: #07398050;
-    letter-spacing: 0.2rem;
-    line-height: 7.05rem;
+    letter-spacing: 0.4rem;
+    line-height: 2.5rem;
+
+    @media (min-width: 465px) {
+      font-size: 10rem;
+      letter-spacing: 0.2rem;
+      line-height: 7.05rem;
+    }
   }
 
   span {

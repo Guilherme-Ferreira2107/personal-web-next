@@ -2,12 +2,12 @@ import Image from "next/image";
 import moment from "moment";
 
 import Package from "../../../package.json";
-import { WrapperFooter } from "./footer.styles";
+import { WrapperFooter } from "./styles";
 import iconLinkedin from "../../../assets/images/linkedin.svg";
 import iconWhatsapp from "../../../assets/images/whatsapp.png";
 import iconGithub from "../../../assets/images/github.svg";
 
-const Footer = () => {
+export default function Footer() {
   const currentYear = moment().format("YYYY");
 
   return (
@@ -65,6 +65,4 @@ const Footer = () => {
       <small>V.{Package.version}</small>
     </WrapperFooter>
   );
-};
-
-export default Footer;
+}

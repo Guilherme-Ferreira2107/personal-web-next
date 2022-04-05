@@ -1,12 +1,7 @@
 import { useState, useEffect } from "react";
-import {
-  WrapperHeader,
-  Navbar,
-  NavbarHeader,
-  NavbarCollapse,
-} from "./header.styles";
+import { WrapperHeader, Navbar, NavbarHeader, NavbarCollapse } from "./styles";
 
-const Header = () => {
+export default function Header() {
   const [offset, setOffset] = useState(0);
   const [classScroll, setClassScroll] = useState("");
 
@@ -53,6 +48,4 @@ const Header = () => {
       </Navbar>
     </WrapperHeader>
   );
-};
-
-export default Header;
+}

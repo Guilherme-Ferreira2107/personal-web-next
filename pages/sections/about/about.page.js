@@ -1,6 +1,6 @@
-import { WrapperAbout, ContentAbout } from "./about.styles";
+import { WrapperAbout, ContentAbout } from "./styles";
 
-const About = () => {
+export default function About() {
   return (
     <WrapperAbout>
       <ContentAbout>
@@ -30,6 +30,4 @@ const About = () => {
       </ContentAbout>
     </WrapperAbout>
   );
-};
-
-export default About;
+}

@@ -1,5 +1,7 @@
-export { default as About } from "./about/about";
-export { default as Aside } from "./aside/aside";
-export { default as Footer } from "./footer/footer";
-export { default as Header } from "./header/header";
-export { default as Presentation } from "./presentation/presentation";
+import About from "./about/about.page";
+import Aside from "./aside/aside.page";
+import Footer from "./footer/footer.page";
+import Header from "./header/header.page";
+import Presentation from "./presentation/presentation.page";
+
+export { About, Aside, Footer, Header, Presentation };

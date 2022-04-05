@@ -6,12 +6,12 @@ import {
   ContentSocialMedia,
   SocialList,
   VerticalDivisor,
-} from "./aside.styles";
+} from "./styles";
 import iconLinkedin from "../../../assets/images/linkedin.svg";
 import iconWhatsapp from "../../../assets/images/whatsapp.png";
 import iconGithub from "../../../assets/images/github.svg";
 
-const Aside = () => {
+export default function Aside() {
   return (
     <WrapperAside>
       <ContentNamePanel>
@@ -76,6 +76,4 @@ const Aside = () => {
       </ContentSocialMedia>
     </WrapperAside>
   );
-};
-
-export default Aside;
+}

@@ -21,7 +21,7 @@ export const ContentPresentation = styled.div`
   );
 
   & div {
-    width: 700px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;

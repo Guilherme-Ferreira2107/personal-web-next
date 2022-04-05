@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { About, Footer, Header, Presentation } from "./sections";
-import { Wrapper, WrapperContent } from "./_app.styles";
+import { Wrapper, WrapperContent } from "./styles";
 
 export default function Home() {
   return (

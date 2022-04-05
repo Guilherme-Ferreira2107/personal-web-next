@@ -1,10 +1,7 @@
-import { Aside } from "../../sections";
-import {
-  WrapperPresentation,
-  ContentPresentation,
-} from "./presentation.styles";
+import { Aside } from "..";
+import { WrapperPresentation, ContentPresentation } from "./styles";
 
-const Presentation = () => {
+export default function Presentation() {
   return (
     <WrapperPresentation>
       <Aside />
@@ -16,6 +13,4 @@ const Presentation = () => {
       </ContentPresentation>
     </WrapperPresentation>
   );
-};
-
-export default Presentation;
+}

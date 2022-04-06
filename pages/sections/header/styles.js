@@ -6,6 +6,7 @@ export const WrapperHeader = styled.section`
   transition: all 0.25s linear;
   background-color: transparent;
   position: fixed;
+  z-index: 10;
 
   &.scroll-active {
     z-index: 5;
@@ -133,10 +134,10 @@ export const NavbarMobile = styled.nav`
 
 export const NavbarCollapseMobile = styled.div`
   position: relative;
+  z-index: 7;
   background-color: rgba(55, 55, 55, 1);
   border-radius: 0.25rem;
   padding: 20px;
-  z-index: 6;
   animation-name: showMenu;
   animation-duration: 0.15s;
 

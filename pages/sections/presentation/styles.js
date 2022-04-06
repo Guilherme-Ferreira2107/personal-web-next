@@ -30,7 +30,6 @@ export const ContentPresentation = styled.div`
 
   p {
     position: relative;
-    z-index: 1;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     font-size: 3rem;
@@ -39,6 +38,12 @@ export const ContentPresentation = styled.div`
     line-height: 2.5rem;
 
     @media (min-width: 465px) {
+      font-size: 6rem;
+      letter-spacing: 0.2rem;
+      line-height: 4.22rem;
+    }
+
+    @media (min-width: 768px) {
       font-size: 10rem;
       letter-spacing: 0.2rem;
       line-height: 7.05rem;
@@ -47,22 +52,33 @@ export const ContentPresentation = styled.div`
 
   span {
     font-family: "Barlow Condensed", sans-serif;
-    z-index: 2;
     color: white;
     font-weight: 300;
+    margin-top: 4px;
     margin-right: 10px;
     position: relative;
 
     &:before {
       content: "";
       position: absolute;
-      left: 0;
+      right: 0;
       bottom: 0;
-      margin-left: 66%;
+      margin-right: 150px;
       margin-bottom: 6px;
       width: 30px;
       height: 1px;
       background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    font-size: 0.75rem;
+
+    @media (min-width: 465px) {
+      font-size: 1rem;
+
+      &:before {
+        margin-right: 200px;
+        margin-bottom: 8px;
+      }
     }
   }
 `;

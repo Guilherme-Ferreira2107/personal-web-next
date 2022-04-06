@@ -1,7 +1,12 @@
 import Image from "next/image";
 
 import perfil from "../../../assets/images/perfil_1.png";
-import { WrapperAbout, ContentAbout, ContentImage } from "./styles";
+import {
+  WrapperAbout,
+  ContentAbout,
+  ContentImage,
+  ContentImageMobile,
+} from "./styles";
 
 export default function About() {
   return (
@@ -9,6 +14,9 @@ export default function About() {
       <h1>
         SOBRE <span>MIM</span>
       </h1>
+      <ContentImageMobile>
+        <Image src={perfil} alt="Guilherme Santos" />
+      </ContentImageMobile>
       <ContentAbout>
         <div>
           <p>

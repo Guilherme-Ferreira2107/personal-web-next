@@ -1,5 +1,11 @@
+import { BsArrowDown } from "react-icons/bs";
+
 import { Aside } from "..";
-import { WrapperPresentation, ContentPresentation } from "./styles";
+import {
+  WrapperPresentation,
+  ContentPresentation,
+  ContentArrow,
+} from "./styles";
 
 export default function Presentation() {
   return (
@@ -10,6 +16,9 @@ export default function Presentation() {
           <p>GUILHERME SANTOS</p>
           <span>CARINHO POR CADA LINHA DE CÓDIGO</span>
         </div>
+        <ContentArrow>
+          <BsArrowDown />
+        </ContentArrow>
       </ContentPresentation>
     </WrapperPresentation>
   );

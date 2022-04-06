@@ -82,3 +82,15 @@ export const ContentPresentation = styled.div`
     }
   }
 `;
+
+export const ContentArrow = styled.div`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 20px 20px 0;
+
+  svg {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.2);
+  }
+`;

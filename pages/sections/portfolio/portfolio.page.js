@@ -69,7 +69,7 @@ export default function Portfolio() {
         {portfolios.map((item, idx) => (
           <div key={idx}>
             <ContentImage>
-              <a href={item.url} target="_blank">
+              <a href={item.url} target="_blank" rel="noreferrer">
                 <Image
                   src={item.logo}
                   alt={item.title}
@@ -80,7 +80,7 @@ export default function Portfolio() {
             <div>
               <h4>{item.title}</h4>
               <p>{item.description}</p>
-              <a href={item.url} target="_blank">
+              <a href={item.url} target="_blank" rel="noreferrer">
                 {item.link}
               </a>
             </div>

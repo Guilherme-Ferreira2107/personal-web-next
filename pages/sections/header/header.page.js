@@ -39,15 +39,6 @@ export default function Header() {
               <a href="#about">SOBRE</a>
             </li>
             <li>
-              <a href="#education">EDUCAÇÃO</a>
-            </li>
-            <li>
-              <a href="#experience">EXPERIÊNCIA</a>
-            </li>
-            <li>
-              <a href="#skills">HABILIDADES</a>
-            </li>
-            <li>
               <a href="#portfolio">PORTFÓLIO</a>
             </li>
             <li>
@@ -69,21 +60,6 @@ export default function Header() {
               <li>
                 <a onClick={() => setToogleMenu(false)} href="#about">
                   SOBRE
-                </a>
-              </li>
-              <li>
-                <a onClick={() => setToogleMenu(false)} href="#education">
-                  EDUCAÇÃO
-                </a>
-              </li>
-              <li>
-                <a onClick={() => setToogleMenu(false)} href="#experience">
-                  EXPERIÊNCIA
-                </a>
-              </li>
-              <li>
-                <a onClick={() => setToogleMenu(false)} href="#skills">
-                  HABILIDADES
                 </a>
               </li>
               <li>

@@ -1,9 +1,19 @@
 import { useState, useEffect } from "react";
-import { WrapperHeader, Navbar, NavbarHeader, NavbarCollapse } from "./styles";
+import { AiOutlineMenu } from "react-icons/ai";
+
+import {
+  WrapperHeader,
+  NavbarDesktop,
+  NavbarHeader,
+  NavbarCollapse,
+  NavbarMobile,
+  NavbarCollapseMobile,
+} from "./styles";
 
 export default function Header() {
   const [offset, setOffset] = useState(0);
   const [classScroll, setClassScroll] = useState("");
+  const [toogleMenu, setToogleMenu] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset);
@@ -19,7 +29,7 @@ export default function Header() {
 
   return (
     <WrapperHeader className={classScroll}>
-      <Navbar>
+      <NavbarDesktop>
         <NavbarHeader className={classScroll}>
           <a href="#TOP">FULLSTACK DEVELOPER</a>
         </NavbarHeader>
@@ -45,7 +55,55 @@ export default function Header() {
             </li>
           </ul>
         </NavbarCollapse>
-      </Navbar>
+      </NavbarDesktop>
+
+      <NavbarMobile>
+        {toogleMenu ? (
+          <NavbarCollapseMobile className={classScroll}>
+            <ul>
+              <li>
+                <a onClick={() => setToogleMenu(false)} href="#TOP">
+                  FULLSTACK DEVELOPER
+                </a>
+              </li>
+              <li>
+                <a onClick={() => setToogleMenu(false)} href="#about">
+                  SOBRE
+                </a>
+              </li>
+              <li>
+                <a onClick={() => setToogleMenu(false)} href="#education">
+                  EDUCAÇÃO
+                </a>
+              </li>
+              <li>
+                <a onClick={() => setToogleMenu(false)} href="#experience">
+                  EXPERIÊNCIA
+                </a>
+              </li>
+              <li>
+                <a onClick={() => setToogleMenu(false)} href="#skills">
+                  HABILIDADES
+                </a>
+              </li>
+              <li>
+                <a onClick={() => setToogleMenu(false)} href="#portfolio">
+                  PORTFÓLIO
+                </a>
+              </li>
+              <li>
+                <a onClick={() => setToogleMenu(false)} href="#contacts">
+                  CONTATOS
+                </a>
+              </li>
+            </ul>
+          </NavbarCollapseMobile>
+        ) : (
+          <button onClick={() => setToogleMenu(!toogleMenu)}>
+            <AiOutlineMenu />
+          </button>
+        )}
+      </NavbarMobile>
     </WrapperHeader>
   );
 }

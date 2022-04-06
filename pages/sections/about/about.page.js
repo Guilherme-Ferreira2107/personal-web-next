@@ -34,7 +34,7 @@ export default function About() {
           </p>
         </div>
         <ContentImage>
-          <Image className="perfil" src={perfil} alt="Guilherme Santos" />
+          <Image src={perfil} alt="Guilherme Santos" />
         </ContentImage>
       </ContentAbout>
     </WrapperAbout>

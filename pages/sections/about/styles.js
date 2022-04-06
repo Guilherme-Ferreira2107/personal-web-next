@@ -47,14 +47,6 @@ export const ContentAbout = styled.div`
     color: #0093e9;
   }
 
-  .perfil {
-    min-width: 300px !important;
-    min-height: 300px !important;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-
   &:before {
     content: "SOBRE";
     position: absolute;
@@ -69,6 +61,7 @@ export const ContentAbout = styled.div`
 
     @media (min-width: 465px) {
       font-size: 20rem;
+      margin: -5% 0 0 -5%;
     }
   }
 `;
@@ -78,6 +71,14 @@ export const ContentImage = styled.div`
   display: none;
 
   @media (min-width: 465px) {
-    display: initial;
+    display: block;
+  }
+
+  img {
+    min-width: 300px !important;
+    min-height: 300px !important;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
   }
 `;
